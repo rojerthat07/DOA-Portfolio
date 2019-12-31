@@ -1,199 +1,4 @@
-//Global Styles
-
-input[type="file"]{
-    cursor: pointer;
-    color:white;
-    border:1px solid $mainColor2;
-    background-color: $mainColor1;
-    padding:.2em 1em;
-    width:100%;
-    font-size: .8em;
-    border-radius: 3px;
-    &:hover{
-        background-color: $maroonDark2;
-    }
-    &:active{
-        background-color: $mainColor1;
-    }
-   
-}
-
-.form-container{
-    width:85%;
-    margin:auto;
-}
-//Form Status for College
-.form-status{
-    width:90%;
-    margin:1em auto;
-    border-bottom:1px solid black;
-    border-top:1px solid black;
-    background-color: $maroonLight1;
-    border-radius: 5px;
-    padding: 0em;
-    display: flex;
-    justify-content: center;
-    box-shadow: 0px 3px 3px gray;
-    @include laptop{
-        font-size:.8em;
-    }
-    @include mini-laptop{
-        border:0;
-        box-shadow: 3px 3px 3px gray;
-        display:grid;
-        grid-template-columns: 1fr;
-        text-align: center;
-        margin:0 auto ;
-    }
-    
-    a{
-        &:hover{
-            text-decoration: none;
-           }
-    }
-    &__information{
-        cursor: pointer;
-        border-right: 1px solid rgb(211, 211, 211);
-        color:white;
-       font-size: 1em;
-       padding:.3em 1em;
-       margin:0;
-       font-family: font(font2);
-       @include tablet{
-        font-size: .9em;
-       }
-       @include mini-laptop{
-        border-bottom: 1px solid rgb(230, 125, 125);;
-    }
-       &:hover{
-        background-color: darken($maroonLight1,5);
-        text-decoration: none;
-       }
-    }
-    
-    &--active{
-        pointer-events: none;
-        background-color: $mainColor2;
-        color:black;
-        font-family: font(font4);
-    
-    }
-    
-}
-
-//Form Status for Senior High School
-.form-status-shs{
-    width:90%;
-    margin:1em auto;
-    border-bottom:1px solid black;
-    border-top:1px solid black;
-    background-color: $blueDark2;
-    border-radius: 5px;
-    padding: 0em;
-    display: flex;
-    justify-content: center;
-    box-shadow: 0px 3px 3px gray;
-    @include laptop{
-        font-size:.8em;
-    }
-    @include mini-laptop{
-        border:0;
-        box-shadow: 3px 3px 3px gray;
-        display:grid;
-        grid-template-columns: 1fr;
-        text-align: center;
-        margin:0 auto ;
-    }
-    
-    a{
-        &:hover{
-            text-decoration: none;
-           }
-    }
-    .form-status__information{
-        cursor: pointer;
-        border-right: 1px solid rgb(211, 211, 211);
-        color:rgb(238, 238, 238);
-       font-size: 1em;
-       padding:.3em 1em;
-       margin:0;
-       font-family: font(font2);
-       @include tablet{
-        font-size: .9em;
-       }
-       @include mini-laptop{
-        border-bottom: 1px solid rgb(219, 186, 186);;
-    }
-       &:hover{
-        background-color: $blueDark1;
-        text-decoration: none;
-       }
-    }
-    
-    .form-status--active{
-        pointer-events: none;
-        background-color: $mainColor2;
-        color:black;
-        font-family: font(font4);
-    
-    }
-    
-}
-
-.form-section--heading{
-    font-size: 1.5em;
-    font-family: font(font5);
-    padding:1em 0em;
-    border-bottom:1px solid $mainColor1;
-    margin:1em 0em;
-    @include laptop{
-        font-size:1.3em;
-    }
-    @include mini-laptop{
-        font-size:1.1em;
-    }
-    @include tablet{
-        font-size:1em;
-    }
-}
-
-//Senior High Form Section Heading
-.shs-form-section--heading{
-    font-size: 1.5em;
-    font-family: font(font5);
-    padding:1em 0em;
-    border-bottom:1px solid $mainColor3;
-    margin:1em 0em;
-    @include laptop{
-        font-size:1.3em;
-    }
-    @include mini-laptop{
-        font-size:1.1em;
-    }
-    @include tablet{
-        font-size:1em;
-    }
-}
-
-
-.form-section--description{
-    font-style: oblique;
-    margin:2em 1em;
-    font-size: .7em;
-    text-indent: 3em;
-    @include tablet{
-        font-size: .6em;
-    }
-}
-
-.form-section--description--warning{
-    text-align: right;
-    font-size: .9em;
-    color: red;
-    text-indent: 0em;
-}
-
-//Specified Styles
+//Login Form
 .login__form--container{
     position: relative;
     width:80%;
@@ -295,147 +100,61 @@ input[type="file"]{
 }
 
 
-
-//College Form
-.college-form{
-    padding:1rem;
-
-    .college-form__input{
-        display: grid;
-        grid-template-columns: 3fr 9fr;
-        align-content: center;
-        align-items: center;
-        justify-content: center;
-        @include mini-laptop{
-            grid-template-columns: 1fr;
-        }
-
-        .college-form__input--label{
-            font-family: font(font2);
-            font-size: .9em;
-            padding:0 1em;
-            margin:.5em .5em;
-            @include mini-laptop{
-        
-                margin:0em;
-            }
-        }
-
-
-        .college-form__input--input{
-            width:100%;
-            border-radius: 5px;
-            border:1px solid rgb(112, 112, 112);
-            padding: .3em 1em;
-            margin:.2em 0;
-            @include mini-laptop{
-                font-size: .9em;
-             }
-        }
-        .college-form__input--short{
-            @include inputShort
-        }
-        
-        .college-form__input--select{
-            @extend .college-form__input--input
-        }
-    }
-  
-
-      &__button{
-        margin: 2em 0em;
-        text-align: right;
-        
-        #{&}--button{
-            font-family: font(font3);
-            background-color:$mainColor1;
-            color:white;
-            border:none;
-            border-radius: 2px;
-            margin: 1em;
-            color:rgb(224, 223, 223);
-            padding:.4em 1.5em;
-            cursor: pointer;
-            
-            &:hover{
-                color:$mainColor2;
-            }
-            @include mini-laptop{
-                font-size:.8em;
-            }
-            @include tablet{
-                font-size:.7em;
-            }
-        }
-      }
-//Senior High School Button
-      .shs-form__button{
-        margin: 2em 0em;
-        text-align: right;
-        
-        .shs-form__button--button{
-            font-family: font(font3);
-            background-color:$mainColor3;
-            color:white;
-            border:none;
-            border-radius: 2px;
-            margin: 1em;
-            color:rgb(224, 223, 223);
-            padding:.4em 1.5em;
-            cursor: pointer;
-            
-            &:hover{
-                color:$mainColor2;
-            }
-            @include mini-laptop{
-                font-size:.8em;
-            }
-            @include tablet{
-                font-size:.7em;
-            }
-        }
-      }
-
-  .two-column-college-form__input{
-    display: grid;
-    grid-template-columns: 4fr 4fr 4fr 4fr;
-    align-content: center;
-    align-items: center;
-    @include mini-laptop{
-        grid-template-columns: 1fr;
-    }
-    .college-form__input--label{
-        font-family: font(font2);
-        font-size: .9em;
-        padding:0 1em;
-        margin:0em .5em;
-        @include mini-laptop{
-
-            margin:0em;
-        }
-    }
-
-
-    .college-form__input--input{
-        width:100%;
-        border-radius: 5px;
-        border:1px solid rgb(112, 112, 112);
-        padding: .3em 1em;
-        margin:.5em .2em;
-        @include mini-laptop{
-           font-size: .9em;
-        }
-       
-    }
-    .college-form__input--short{
-        @include inputShort
-    }
+//College Button
+.college-form__button{
+    margin: 2em 0em;
+    text-align: right;
     
-    .college-form__input--select{
-        @extend .college-form__input--input
+    .college-form__button--button{
+        font-family: font(font3);
+        background-color:$mainColor1;
+        color:white;
+        border:none;
+        border-radius: 2px;
+        margin: 1em;
+        color:rgb(224, 223, 223);
+        padding:.4em 1.5em;
+        cursor: pointer;
+        
+        &:hover{
+            color:$mainColor2;
+        }
+        @include mini-laptop{
+            font-size:.8em;
+        }
+        @include tablet{
+            font-size:.7em;
+        }
     }
   }
-}
+
+  //Senior High School Button
+  .shs-form__button{
+    margin: 2em 0em;
+    text-align: right;
+    
+    .shs-form__button--button{
+        font-family: font(font3);
+        background-color:$mainColor3;
+        color:white;
+        border:none;
+        border-radius: 2px;
+        margin: 1em;
+        color:rgb(224, 223, 223);
+        padding:.4em 1.5em;
+        cursor: pointer;
+        
+        &:hover{
+            color:$mainColor2;
+        }
+        @include mini-laptop{
+            font-size:.8em;
+        }
+        @include tablet{
+            font-size:.7em;
+        }
+    }
+  }
 
 
 

@@ -23,6 +23,18 @@
         top:30%;
 }
 
+    .server-message__author{
+        color:rgb(255, 174, 0);
+        font-family: font("font4");
+        font-size: .6em;
+        text-align: right;
+        margin-right: 2.5em;
+        
+        @include mini-laptop{
+            font-size: .6em;
+        }
+    }
+
     button{
         padding:.6em 2em;
         font-family: font("font4");
@@ -32,6 +44,7 @@
         cursor: pointer;
         transition: 1s;
         margin:1em 0;
+        color:white;
         &:hover{
             color:black;
             background:orange;
@@ -44,7 +57,7 @@
       
     }
 
-        h1{ 
+        .server-message__heading{ 
             font-family: font("font1");
             font-size: 1.5em;
             @include mini-laptop{
@@ -57,7 +70,7 @@
             font-size: 1em;
     }
         }
-        p{
+        .server-message__text{
            
             font-size: .9em;
             font-family: font("font2");
