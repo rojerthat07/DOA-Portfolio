@@ -1,0 +1,26 @@
+{
+  "name": "dhvsu-online-admission",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rojerthat07/U-Online-Admission.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rojerthat07/U-Online-Admission/issues"
+  },
+  "homepage": "https://rojerthat07.github.io/u-online-admission",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1"
+  },
+  "dependencies": {
+    "gh-pages": "^2.1.1"
+  }
+}

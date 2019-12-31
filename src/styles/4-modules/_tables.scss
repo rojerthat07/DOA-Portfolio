@@ -1,0 +1,23 @@
+.dhvsu-table{
+    width:80%;
+    margin: 1em auto;
+    @include tablet{
+        font-size:.8em;
+        width:90%;
+    }
+
+    .table__row{
+        border-bottom: 1px solid silver;
+
+        &:hover{
+            background-color: rgb(226, 226, 226);
+        }
+        .table__row--data{
+            padding: .3em 5em;
+            font-size: .9em;
+            @include tablet{
+                font-size:.7em;
+            }
+        }
+    }
+}

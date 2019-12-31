@@ -1,0 +1,89 @@
+.navbar {
+    background-color: $mainColor1;
+    text-align: center;
+    border-top: 5px solid $maroonLight1;
+
+    .navbar-brand {
+        img {
+            width: 1.7em;
+            height: auto;
+        }
+    }
+
+    .navbar-toggler {}
+
+    .navbar-nav {
+
+        .nav-item {
+            padding: 0 .4em;
+
+            &:hover {
+                border-bottom: 1px solid $mainColor2;
+                background-color: $maroonDark1;
+            }
+
+            .nav-link {
+                color: white;
+                font-size: .8em;
+                font-family: font(font3);
+
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .nav-search {
+        text-align: center;
+        color: white;
+        cursor: pointer;
+        padding: .5em 0;
+    }
+}
+
+
+//Senior High School Navbar
+.navbar-shs {
+    background-color: $mainColor3;
+    text-align: center;
+    border-top: 5px solid $blueLight2;
+
+    .navbar-brand {
+        img {
+            width: 1.7em;
+            height: auto;
+        }
+    }
+
+    .navbar-toggler {}
+
+    .navbar-nav {
+
+        .nav-item {
+            padding: 0 .4em;
+
+            &:hover {
+                border-bottom: 1px solid $mainColor2;
+                background-color: $blueDark1;
+            }
+
+            .nav-link {
+                color: white;
+                font-size: .8em;
+                font-family: font(font3);
+
+                &:hover {
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .nav-search {
+        text-align: center;
+        color: white;
+        cursor: pointer;
+        padding: .5em 0;
+    }
+}
