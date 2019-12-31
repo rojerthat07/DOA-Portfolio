@@ -4,7 +4,7 @@ const concat = require('gulp-concat')
 
 
 gulp.task('scripts', function () {
-    return gulp.src('src/scripts/shs-app.js')
-        .pipe(concat('shs-app.js'))
+    return gulp.src('src/scripts/app.js')
+        .pipe(concat('app.js'))
         .pipe(gulp.dest('build/scripts'));
 });
