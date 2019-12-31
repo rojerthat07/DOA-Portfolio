@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rojerthat07/U-Online-Admission.git"
+    "url": "git+https://github.com/rojerthat07/DOA-Portfolio.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/rojerthat07/U-Online-Admission/issues"
+    "url": "https://github.com/rojerthat07/DOA-Portfolio/issues"
   },
-  "homepage": "https://rojerthat07.github.io/u-online-admission",
+  "homepage": "https://rojerthat07.github.io/DOA-Portfolio",
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1"
