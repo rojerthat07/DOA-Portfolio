@@ -20,6 +20,7 @@
     align-items: center;
     border:1px solid rgb(233, 232, 232);
     border-radius: 5px;
+    max-width: 1000px;
 
 
 
@@ -96,6 +97,7 @@
     width:90%;
     padding:2em;
     margin:auto;
+    max-width: 1200px;
     @include tablet{
         width:100%;
     }

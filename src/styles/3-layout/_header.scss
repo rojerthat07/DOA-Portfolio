@@ -6,12 +6,15 @@
     align-items: center;
     background-color: $maroonLight2;
     border-top:4px solid $mainColor2;
+
+  
     @include tablet{
         grid-template-columns: 1fr;
     }
     img{
         width:105%;
         height:auto;
+
         @include desktop{
             width:80%;
         }
@@ -23,6 +26,7 @@
     }
     div{
         padding:0em 1em;
+        max-width: 1200px;
         @include tablet{
            text-align: center;
            margin:.5em 0;
