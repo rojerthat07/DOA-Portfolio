@@ -55,6 +55,9 @@
         width:100%;
         background-color: $mainColor1;
         border:2px solid $mainColor2;
+        @include laptop{
+            font-size: 1em;
+         }
         @include tablet{
             font-size: .8em;
          }

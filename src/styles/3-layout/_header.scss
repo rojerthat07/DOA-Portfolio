@@ -26,7 +26,7 @@
     }
     div{
         padding:0em 1em;
-        max-width: 1200px;
+    
         @include tablet{
            text-align: center;
            margin:.5em 0;
@@ -44,18 +44,30 @@
             @include tablet{
                 font-size: 1.5em;
             }
+            @include mobile{
+                font-size:1.2em;
+            }
+            
         }
      
         p{
             font-family: font(font4);
             font-size: .9em;
             color:white;
+            @include desktop{
+                font-size:1.3em;
+            }
             @include laptop{
                 font-size: .7em;
             }
             @include tablet{
-                font-size: .7em;
+                font-size: 1em;
             }
+          
+            @include mobile{
+                font-size:.8em;
+            }
+           
         }
         h4{
             font-family: font(font1);
@@ -73,6 +85,9 @@
                 margin:0;
                 font-size: 1.5em;
             }
+            @include mobile{
+                font-size:1.3em;
+            }
         }
         h6{
             font-family: font(font2);
@@ -87,6 +102,7 @@
             @include tablet{
                 font-size: .7em;
             }
+           
         }
 
       

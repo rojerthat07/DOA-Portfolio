@@ -35,6 +35,9 @@
             font-size: 1.1em;
             margin-top:2.5em;
         }
+        @include mobile{
+            font-size: .8em;
+        }
         }
         .form--information{
             font-size:.8em;
@@ -46,6 +49,9 @@
             }
             @include tablet{
                 font-size: .7em;
+            }
+            @include mobile{
+                font-size: .6em;
             }
         }
 
@@ -80,6 +86,9 @@
             margin: 1em;
             color:rgb(224, 223, 223);
             padding:.4em 1.5em;
+            @include mobile{
+                font-size: .6em;
+            }
             &:hover{
                 color:$mainColor2;
             }
@@ -92,8 +101,14 @@
                 @include tablet{
                     font-size: .7em;
                 }
+                @include mobile{
+                    font-size: .5em;
+                }
             }
             .login-form__input--input{
+                @include mobile{
+                    font-size: .5em;
+                }
                 @include tablet{
                     font-size: .7em;
                 }

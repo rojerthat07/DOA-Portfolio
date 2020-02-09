@@ -29,7 +29,7 @@
         font-family: font("font4");
         font-size: .6em;
         text-align: right;
-        margin-right: 2.5em;
+    
         
         @include mini-laptop{
             font-size: .6em;
@@ -46,6 +46,9 @@
         transition: 1s;
         margin:1em 0;
         color:white;
+        @include mobile{
+            font-size: .6em;
+        }
         &:hover{
             color:black;
             background:orange;

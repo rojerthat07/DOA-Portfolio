@@ -42,6 +42,9 @@
             font-size: 1.5em;
             margin-top:1.5em;
         }
+        @include mobile{
+            font-size:1.2em;
+        }
      
     }
     .section__description--container{
@@ -55,6 +58,9 @@
             }
             @include tablet{
                 font-size: .8em;
+            }
+            @include mobile{
+                font-size:.7em;
             }
         }
     }
@@ -75,6 +81,9 @@
             }
             @include tablet{
                 font-size: .7em;
+            }
+            @include mobile{
+                font-size:.5em;
             }
             &:hover{
                 background-color: rgb(229, 226, 226);
@@ -117,6 +126,9 @@
             @include mini-laptop{
                 font-size: 1.5em;
             }
+            @include mobile{
+                font-size: 1.2em;
+            }
            
         }
         .information-section__description--info{
@@ -130,6 +142,9 @@
             }
             @include tablet{
                 font-size: .7em;
+            }
+            @include mobile{
+                font-size: .5em;
             }
         }
     }
