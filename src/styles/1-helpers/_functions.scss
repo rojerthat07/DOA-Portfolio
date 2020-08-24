@@ -1,11 +1,11 @@
-$fontVariant:(
-    "font1":'Roboto Thin',
-    "font2":'Roboto Light',
-    "font3":'Roboto',
-    "font4":'Roboto Medium',
-    "font5":'Roboto Black',
+$fontVariant: (
+  "font1": "Roboto",
+  "font2": "Roboto",
+  "font3": "Roboto",
+  "font4": "Roboto",
+  "font5": "Roboto",
 );
 
-@function font($fontName){
-    @return map-get($fontVariant,$fontName);
+@function font($fontName) {
+  @return map-get($fontVariant, $fontName);
 }

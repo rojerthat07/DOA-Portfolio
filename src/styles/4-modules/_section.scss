@@ -1,151 +1,146 @@
-.twocolumn__container{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    @include mini-laptop{
-        grid-template-columns: 1fr;
-    }
+.twocolumn__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  @include mini-laptop {
+    grid-template-columns: 1fr;
+  }
 }
 
-.select__section--container{
-    position: relative;
-    width:80%;
-    min-height:400px;
-    padding:3em;
-    margin:auto;
-    margin:2em auto;
-    text-align: center;
-    display:grid;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    border:1px solid rgb(233, 232, 232);
-    border-radius: 5px;
-    max-width: 1000px;
+.select__section--container {
+  position: relative;
+  width: 80%;
+  min-height: 400px;
+  padding: 3em;
+  margin: auto;
+  margin: 2em auto;
+  text-align: center;
+  display: grid;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(233, 232, 232);
+  border-radius: 5px;
+  max-width: 1000px;
 
-
-
-    .section--heading{
-        position: absolute;
-        width:100%;
-        top:0;
-        left:0;
-        padding: .5em;
-        font-family: 'Roboto Thin';
-        margin-top:.7em;
-        @include laptop{
-            font-size:2em;
-        }
-        @include mini-laptop{
-            font-size: 2em;
-        }
-        @include tablet{
-            font-size: 1.5em;
-            margin-top:1.5em;
-        }
-        @include mobile{
-            font-size:1.2em;
-        }
-     
+  .section--heading {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 0.5em;
+    font-family: "Roboto";
+    font-weight: 300;
+    margin-top: 0.7em;
+    @include laptop {
+      font-size: 2em;
     }
-    .section__description--container{
-        .section--information{
-            font-size: .9em;
-            @include laptop{
-                font-size:.7em;
-            }
-            @include mini-laptop{
-                font-size: 1em;
-            }
-            @include tablet{
-                font-size: .8em;
-            }
-            @include mobile{
-                font-size:.7em;
-            }
-        }
+    @include mini-laptop {
+      font-size: 2em;
     }
-    .section__options--container{
-     
-
-        .section--option{
-            border-radius: 5px;
-            border:none;
-            padding:.5em 2em;
-            margin:1em;
-            font-size: .8em;
-            @include laptop{
-                font-size:.6em;
-            }
-            @include mini-laptop{
-                font-size: .8em;
-            }
-            @include tablet{
-                font-size: .7em;
-            }
-            @include mobile{
-                font-size:.5em;
-            }
-            &:hover{
-                background-color: rgb(229, 226, 226);
-                color:black;
-            }
-        }
-    
-        .o1{
-            background: $mainColor2;
-        }
-        .o2{
-            color:white;
-            background: rgb(5, 5, 128);
-        }
-
+    @include tablet {
+      font-size: 1.5em;
+      margin-top: 1.5em;
     }
+    @include mobile {
+      font-size: 1.2em;
+    }
+  }
+  .section__description--container {
+    .section--information {
+      font-size: 0.9em;
+      @include laptop {
+        font-size: 0.7em;
+      }
+      @include mini-laptop {
+        font-size: 1em;
+      }
+      @include tablet {
+        font-size: 0.8em;
+      }
+      @include mobile {
+        font-size: 0.7em;
+      }
+    }
+  }
+  .section__options--container {
+    .section--option {
+      border-radius: 5px;
+      border: none;
+      padding: 0.5em 2em;
+      margin: 1em;
+      font-size: 0.8em;
+      @include laptop {
+        font-size: 0.6em;
+      }
+      @include mini-laptop {
+        font-size: 0.8em;
+      }
+      @include tablet {
+        font-size: 0.7em;
+      }
+      @include mobile {
+        font-size: 0.5em;
+      }
+      &:hover {
+        background-color: rgb(229, 226, 226);
+        color: black;
+      }
+    }
+
+    .o1 {
+      background: $mainColor2;
+    }
+    .o2 {
+      color: white;
+      background: rgb(5, 5, 128);
+    }
+  }
 }
 
-.information-section{
-    width:90%;
-    padding:2em;
-    margin:auto;
-    max-width: 1200px;
-    @include tablet{
-        width:100%;
+.information-section {
+  width: 90%;
+  padding: 2em;
+  margin: auto;
+  max-width: 1200px;
+  @include tablet {
+    width: 100%;
+  }
+  .information-section__image {
+    float: right;
+    width: 25%;
+    @include desktop {
+      width: 15%;
     }
-    .information-section__image{
-        float:right;
-        width:25%;
-        @include desktop{
-            width:15%;
-        }
+  }
 
-    }
+  .information-section__description {
+    .information-section__description--heading {
+      margin: 0.8em 0em;
+      font-family: font(font1);
+      font-weight: 300;
 
-    .information-section__description{
-        .information-section__description--heading{
-            margin:.8em 0em;
-            font-family: font(font1);
-            @include mini-laptop{
-                font-size: 1.5em;
-            }
-            @include mobile{
-                font-size: 1.2em;
-            }
-           
-        }
-        .information-section__description--info{
-            font-size: .9em;
-            margin: 1em 2em;
-            line-height: 2em;
-            font-family: font(font2);
-          
-            @include mini-laptop{
-                font-size: .8em;
-            }
-            @include tablet{
-                font-size: .7em;
-            }
-            @include mobile{
-                font-size: .5em;
-            }
-        }
+      @include mini-laptop {
+        font-size: 1.5em;
+      }
+      @include mobile {
+        font-size: 1.2em;
+      }
     }
+    .information-section__description--info {
+      font-size: 0.9em;
+      margin: 1em 2em;
+      line-height: 2em;
+      font-family: font(font2);
+
+      @include mini-laptop {
+        font-size: 0.8em;
+      }
+      @include tablet {
+        font-size: 0.7em;
+      }
+      @include mobile {
+        font-size: 0.5em;
+      }
+    }
+  }
 }
